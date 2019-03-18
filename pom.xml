@@ -171,7 +171,13 @@
 			<build>
 				<resources>
 					<resource>
-						<directory>${project.basedir}/src/main/resources</directory>
+						<directory>${project.basedir}/src/main/resource</directory>
+						<excludes>
+							<exclude>**/*.java</exclude>
+						</excludes>
+					</resource>
+					<resource>
+						<directory>${project.basedir}/src/production/resource</directory>
 						<excludes>
 							<exclude>**/*.java</exclude>
 						</excludes>

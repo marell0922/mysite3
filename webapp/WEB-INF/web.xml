@@ -24,7 +24,7 @@
 	</servlet-mapping>
 	<context-param> <!-- 전역 파라미터 -->
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/applicationContext.xml</param-value><!-- src/main/resource에 놓을 경우, classpath : 를 표현해줘야 함. -->
+		<param-value>classpath:applicationContext.xml</param-value><!-- src/main/resource에 놓을 경우, classpath : 를 표현해줘야 함. -->
 	</context-param>
 	<listener> <!-- Context Parameter -->
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
